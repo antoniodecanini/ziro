@@ -1,0 +1,10 @@
+{
+  "name": "ziro-web",
+  "version": "1.0.0",
+  "description": "WebApp of Ziro",
+  "main": "index.js",
+  "repository": "https://github.com/antoniodecanini/ziro.git",
+  "author": "Antonio Decanini",
+  "license": "MIT",
+  "private": false
+}
