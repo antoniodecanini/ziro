@@ -1,0 +1,27 @@
+#page-landing {
+  width: 100vw;
+  height: 100vh;
+}
+
+.content {
+  margin: 2.083rem auto 0;
+  max-width: 1400px;
+}
+
+.products {
+  padding: 0 1.041rem;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+.products h1 {
+  color: var(--primary-color);
+  font: 600 3rem Poppins;
+  letter-spacing: 1px;
+}
+
+.loading-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
