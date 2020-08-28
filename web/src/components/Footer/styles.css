@@ -1,0 +1,38 @@
+.page-footer {
+  height: 7rem;
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1300px;
+}
+
+p {
+  font: 400 1.4rem Poppins;
+  color: var(--background-color);
+  max-width: 240px;
+}
+
+.social-icons {
+  width: 2.5rem;
+  height: 2.5rem;
+  color: var(--background-color);
+}
+
+.social-icons + .social-icons {
+  margin-left: 20px;
+}
+
+@media (min-width: 700px) {
+  p {
+    max-width: none;
+  }
+}
