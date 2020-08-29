@@ -1,0 +1,35 @@
+.display {
+  width: 100%;
+}
+
+.cards {
+  margin: 2.083rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  row-gap: 1.041rem;
+}
+
+@media (min-width: 768px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 800px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1000px) {
+  .cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1300px) {
+  .cards {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
