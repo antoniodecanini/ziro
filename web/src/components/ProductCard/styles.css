@@ -1,0 +1,124 @@
+.card {
+  position: relative;
+  width: 33.33rem;
+  height: 43.75rem;
+  background-color: var(--card1-color);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  width: 100%;
+  height: 100%;
+  background-color: var(--card2-color);
+  transform: skewY(345deg);
+  transition: 0.5s;
+}
+
+.card:hover::before {
+  top: -70%;
+  transform: skewY(390deg);
+}
+
+.card .image {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2.08rem;
+  z-index: 1;
+}
+
+.card .image img {
+  max-width: 85%;
+  transition: 0.5s;
+}
+
+.card:hover .image img {
+  max-width: 75%;
+}
+
+.card .content {
+  position: relative;
+  padding: 1.04rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.card .content h3 {
+  font: 600 1.5rem poppins;
+  color: var(--background-color);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.card .content .price {
+  font: 600 2.5rem poppins;
+  color: var(--background-color);
+  letter-spacing: 1px;
+}
+
+.card .content .buy {
+  position: relative;
+  top: 200px;
+  opacity: 0;
+  padding: 1.041rem 3.125rem;
+  margin-top: 1.5625rem;
+  color: var(--background-color);
+  text-decoration: none;
+  background-color: var(--button-color);
+  border-radius: 3.125rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.card .content .remove {
+  background-color: var(--red-color);
+}
+
+.txt-in-cart {
+  position: relative;
+  top: 200px;
+
+  padding: 1.041rem 3.125rem;
+  margin-top: 1.5625rem;
+  color: var(--background-color);
+
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+.card:hover .content {
+  padding-top: 0;
+}
+
+.card:hover .content .buy {
+  top: 0;
+  opacity: 1;
+}
+
+.card:hover .content .txt-in-cart {
+  top: 0;
+}
+
+@media (min-width: 800px) {
+  .card {
+    width: 22.93rem;
+    height: 33.33rem;
+  }
+
+  .card:hover .image img {
+    max-width: 60%;
+  }
+}
