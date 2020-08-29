@@ -1,0 +1,21 @@
+#page-cart {
+  width: 100vw;
+  height: 100vh;
+}
+
+.content {
+  margin: 2.083rem auto 0;
+  max-width: 1400px;
+}
+
+.cart {
+  padding: 0 1.041rem;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+.cart h1 {
+  color: var(--primary-color);
+  font: 600 3rem Poppins;
+  letter-spacing: 1px;
+}
