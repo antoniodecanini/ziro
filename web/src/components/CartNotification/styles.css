@@ -1,0 +1,10 @@
+.notification::before {
+  content: '';
+  background-color: var(--red-color);
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 5px;
+}
