@@ -7,10 +7,13 @@
   "author": "Antonio Decanini",
   "license": "MIT",
   "private": false,
-  "devDependencies": {
-    "netlify-cli": "^2.61.0"
-  },
   "dependencies": {
     "mongoose": "^5.10.3"
+  },
+  "scripts": {
+    "start": "netlify dev"
+  },
+  "devDependencies": {
+    "netlify-cli": "^2.61.0"
   }
 }
