@@ -9,5 +9,8 @@
   "private": false,
   "devDependencies": {
     "netlify-cli": "^2.61.0"
+  },
+  "dependencies": {
+    "mongoose": "^5.10.3"
   }
 }
